@@ -1,0 +1,25 @@
+:root {
+    --primary: #2d6714;
+    --secondary: #5CB338;
+    --tertiary: #D0E7D2
+}
+
+body {
+    background-color: var(--tertiary);
+}
+
+nav {
+    background-color: var(--secondary);
+}
+
+footer {
+    background-color: var(--primary);
+}
+
+h1, h2 {
+    color: var(--primary);
+}
+
+ul li {
+    margin-bottom: 5px;
+}
