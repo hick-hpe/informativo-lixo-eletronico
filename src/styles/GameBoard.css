@@ -1,0 +1,12 @@
+.items {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.zones {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

@@ -1,0 +1,7 @@
+.item-card {
+  padding: 10px 20px;
+  background-color: #dfe6e9;
+  border-radius: 8px;
+  cursor: grab;
+  font-weight: bold;
+}
