@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const FooterStyled = styled.div`
-    background-color: #1CDF64;
+    background-color: #095a27;
     padding: 20px; // qqr coisa mudar
 
     .col {

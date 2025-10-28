@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const NavbarStyled = styled.div`
     .navbar {
-        background-color: #1CDF64 !important;
+        background-color: #095a27 !important;
     }
 
     .nav-link {
