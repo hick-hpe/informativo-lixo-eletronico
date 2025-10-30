@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import imagemLogo from "/logo.png"
 
 const FooterStyled = styled.div`
     background-color: #095a27;
-    padding: 20px; // qqr coisa mudar
+    padding: 20px;
 
     .col {
         padding: 10px;
@@ -34,8 +35,20 @@ export default function Navbar() {
         <FooterStyled>
             <footer className="row">
                 <div className="col-12 col-sm-4 mt-3 mt-sm-0 text-white">
-                    <div className="fw-bold fs-5">ColetaIF</div>
-                    <div className="mt-3 mt-sm-5">
+                    <div className="fw-bold fs-5">
+                        <img
+                            src={imagemLogo}
+                            alt="Centro de reciclagem"
+                            className="img-fluid rounded shadow-sm"
+                            style={{
+                                width: "50px",
+                                height: "auto",
+                                objectFit: "cover",
+                            }}
+                        />
+                        <span className="ms-2">ColetaIF</span>
+                    </div>
+                    <div className="mt-3">
                         <div>© 2025 - Projeto de Extensão IFPR Cascavel. Todos os direitos reservados.</div>
                         <div>Desenvolvido por:  <i>Palermo e David</i></div>
                     </div>

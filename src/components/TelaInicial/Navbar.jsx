@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import imagemLogo from "/logo.png"
 
 const NavbarStyled = styled.div`
     background-color: #095a27;
@@ -24,7 +25,20 @@ export default function Navbar() {
         <NavbarStyled>
             <nav className="navbar navbar-expand-lg shadow">
                 <div className="container-fluid">
-                    <a className="navbar-brand text-white fw-bold" href="">ColetaIF</a>
+                    <a className="navbar-brand text-white fw-bold" href="">
+                        <img
+                            src={imagemLogo}
+                            alt="Centro de reciclagem"
+                            className="img-fluid rounded shadow-sm"
+                            style={{
+                                width: "50px",
+                                height: "auto",
+                                objectFit: "cover",
+                            }}
+                        />
+                        <span className="ms-2">ColetaIF</span>
+                    </a>
+
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
