@@ -50,7 +50,8 @@ export default function Navbar() {
                     </div>
                     <div className="mt-3">
                         <div>© 2025 - Projeto de Extensão IFPR Cascavel. Todos os direitos reservados.</div>
-                        <div>Desenvolvido por:  <i>Palermo e David</i></div>
+                        <div>Desenvolvido por:  <i>Henrique Palermo Emerick, David Aparecido Hotes</i></div>
+                        <i>Anna, Paulo</i>
                     </div>
                 </div>
                 <div className="col-12 col-sm-4 mt-3 mt-sm-0">
