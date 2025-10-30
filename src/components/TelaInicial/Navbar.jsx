@@ -6,6 +6,7 @@ const NavbarStyled = styled.div`
     top: 0; 
     z-index: 1020;
 
+
     .nav-link {
         color: #fff;
         border-radius: 10px;
@@ -21,7 +22,7 @@ const NavbarStyled = styled.div`
 export default function Navbar() {
     return (
         <NavbarStyled>
-            <nav className="navbar navbar-expand-lg">
+            <nav className="navbar navbar-expand-lg shadow">
                 <div className="container-fluid">
                     <a className="navbar-brand text-white fw-bold" href="">ColetaIF</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
