@@ -1,6 +1,62 @@
 export const items = [
-  { id: 'celular', name: 'Celular quebrado', type: 'especial' },
-  { id: 'pilha', name: 'Pilha usada', type: 'especial' },
-  { id: 'cabo', name: 'Cabo USB velho', type: 'reciclavel' },
-  { id: 'papelao', name: 'Caixa de papelão', type: 'reciclavel' },
+  {
+    id: 1,
+    name: "Celular",
+    type: "eletronico",
+    image: "/assets/celular.png", // ✅ caminho público
+  },
+  {
+    id: 2,
+    name: "Pilhas",
+    type: "eletronico",
+    image: "/assets/pilhas.png", // ✅ ajuste extensão se necessário
+  },
+  {
+    id: 3,
+    name: "Lâmpada",
+    type: "eletronico",
+    image: "/assets/lampada.png",
+  },
+  {
+    id: 4,
+    name: "Papel",
+    type: "papel", // ✅ alterado para categoria específica
+    image: "/assets/papel.png",
+  },
+  {
+    id: 5,
+    name: "Garrafa PET",
+    type: "plastico", // ✅ nova categoria
+    image: "/assets/garrafa.png",
+  },
+  {
+    id: 6,
+    name: "Sacola Plástica",
+    type: "plastico",
+    image: "/assets/sacola.png",
+  },
+  {
+    id: 7,
+    name: "Latinha",
+    type: "metal",
+    image: "/assets/latinha.png",
+  },
+  {
+    id: 8,
+    name: "Lata de Conserva",
+    type: "metal",
+    image: "/assets/lata.png",
+  },
+  {
+    id: 9,
+    name: "Restos de Comida",
+    type: "organico",
+    image: "/assets/comida.png",
+  },
+  {
+    id: 10,
+    name: "Casca de Fruta",
+    type: "organico",
+    image: "/assets/casca.png",
+  },
 ];

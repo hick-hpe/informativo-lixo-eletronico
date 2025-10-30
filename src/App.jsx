@@ -1,11 +1,15 @@
-import React from 'react';
-import GameBoard from './components/GameBoard';
+import React from "react";
+import GameBoard from "./components/GameBoard/GameBoard";
+import "./styles/global.css";
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1>♻️ Descarte Certo</h1>
+    <div className="app">
+      <h1>♻️ Jogo do Lixo Eletrônico</h1>
+      <p>Arraste o item até a lixeira correta!</p>
       <GameBoard />
     </div>
   );
 }
+
+export default App;
