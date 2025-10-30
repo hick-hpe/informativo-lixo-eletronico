@@ -1,18 +1,16 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import SessaoIntroLixo from './components/SessaoIntroLixo'
-import Footer from './components/Footer'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import TelaInicial from "./pages/TelaInicial";
+import TelaJogo from "./pages/TelaJogo";
 
-function App() {
+export default function App() {
 
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <SessaoIntroLixo />
-      <Footer />
-    </>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<TelaInicial />} />
+      <Route path="/jogo" element={<TelaJogo />} />
+    </Routes>
+    </BrowserRouter>
   )
 }
 
-export default App

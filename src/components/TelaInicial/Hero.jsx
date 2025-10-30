@@ -1,4 +1,4 @@
-import imagemFundoHero from "../assets/img/lixo-hero.avif";
+import imagemFundoHero from "../../assets/img/lixo-hero.avif";
 
 export default function Hero() {
     return (
