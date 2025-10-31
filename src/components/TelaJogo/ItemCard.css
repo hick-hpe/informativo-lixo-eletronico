@@ -1,6 +1,117 @@
+/* ===== Layout geral ===== */
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 80px 20px 40px 20px; /* espaço extra no topo para os botões */
+  background-color: #0066ff;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ===== Cabeçalho ===== */
+.game-board h1 {
+  font-size: 1.7rem;
+  margin-bottom: 6px;
+}
+
+.game-board p {
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  color: #444;
+}
+
+/* ===== Botões fixos ===== */
+.buttons-container {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.btn-resultado,
+.btn-reiniciar {
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  opacity: 0.95;
+}
+
+
+.game-board {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.4)
+  ), url("/assets/fundo.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.btn-resultado {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-resultado:hover {
+  background-color: #0056b3;
+  opacity: 1;
+}
+
+.btn-reiniciar {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-reiniciar:hover {
+  background-color: #1e7e34;
+  opacity: 1;
+}
+
+/* ===== Container dos itens ===== */
+.items-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+/* ===== Container das lixeiras ===== */
+.dropzones-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+  max-width: 800px;
+}
+
+/* ===== Itens ===== */
 .item-card {
-  width: 120px;
-  height: 120px;
+  width: 110px;
+  height: 110px;
   background: white;
   border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -10,21 +121,105 @@
   justify-content: center;
   cursor: grab;
   transition: transform 0.2s ease;
-  padding: 10px;
 }
 
 .item-card:hover {
   transform: scale(1.05);
 }
 
-.item-image {
-  width: 90px;
-  height: 90px;
+.item-card img {
+  width: 60px;
+  height: 60px;
   object-fit: contain;
 }
 
 .item-card p {
   font-size: 14px;
-  margin-top: 6px;
+  margin-top: 5px;
+}
+
+/* ===== Zonas de drop ===== */
+.drop-zone {
+  width: 160px;
+  height: 160px;
+  border: 3px dashed #bbb;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  font-weight: bold;
+  color: #333;
+}
+
+.drop-zone:hover {
+  border-color: #007bff;
+  background-color: #eef5ff;
+}
+
+/* ===== Popup ===== */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
   text-align: center;
+  min-width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-board h2 {
+  font-size: 2rem;
+  color: #86ff14b9;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  position: relative;
+  top: -40px; /* Move para cima */
+  margin-bottom: 20px; /* Espaço abaixo */
+  font-weight: 700;
+}
+
+.popup-content button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+/* ===== Responsivo ===== */
+@media (max-width: 600px) {
+  .item-card {
+    width: 90px;
+    height: 90px;
+  }
+
+  .drop-zone {
+    width: 130px;
+    height: 130px;
+  }
+
+  .buttons-container {
+    top: 10px;
+    right: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }

@@ -3,30 +3,30 @@ export const items = [
     id: 1,
     name: "Celular",
     type: "eletronico",
-    image: "/assets/celular.png", // ✅ caminho público
+    image: "/assets/celular.png",
   },
   {
     id: 2,
     name: "Pilhas",
     type: "eletronico",
-    image: "/assets/pilhas.png", // ✅ ajuste extensão se necessário
+    image: "/assets/pilhas.png",
   },
   {
     id: 3,
-    name: "Lâmpada",
+    name: "Lâmpada Fluorescente",
     type: "eletronico",
     image: "/assets/lampada.png",
   },
   {
     id: 4,
     name: "Papel",
-    type: "papel", // ✅ alterado para categoria específica
+    type: "papel",
     image: "/assets/papel.png",
   },
   {
     id: 5,
     name: "Garrafa PET",
-    type: "plastico", // ✅ nova categoria
+    type: "plastico",
     image: "/assets/garrafa.png",
   },
   {
@@ -58,5 +58,17 @@ export const items = [
     name: "Casca de Fruta",
     type: "organico",
     image: "/assets/casca.png",
+  },
+  {
+    id: 11,
+    name: "Lâmpada Incandescente",
+    type: "vidro",
+    image: "/assets/lampada-incandescente.png",
+  },
+  {
+    id: 12,
+    name: "Gabinete de Computador",
+    type: "eletronico", // ✅ mesmo sendo metal, pertence a eletrônico
+    image: "/assets/gabinete.png",
   },
 ];

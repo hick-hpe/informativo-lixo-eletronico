@@ -13,6 +13,7 @@ const categories = [
   { type: "plastico", name: "Plástico" },
   { type: "metal", name: "Metal" },
   { type: "organico", name: "Orgânico" },
+  { type: "vidro", name: "Vidro" },
 ];
 
 export default function GameBoard() {
@@ -33,10 +34,7 @@ export default function GameBoard() {
     setAvailableItems((prev) => prev.filter((i) => i.id !== item.id));
   };
 
-  const handleMostrarResultados = () => {
-    setMostrarResultados(true);
-  };
-
+  const handleMostrarResultados = () => setMostrarResultados(true);
   const handleReiniciar = () => {
     setAvailableItems(items);
     setAcertos(0);
@@ -47,6 +45,9 @@ export default function GameBoard() {
   return (
     <DndProvider backend={HTML5Backend}>
       <div className="game-board">
+        {/* Título informativo */}
+        <h2>Aprenda a separar corretamente os resíduos!</h2>
+
         <div className="items-container">
           {availableItems.length > 0 ? (
             availableItems.map((item) => (
