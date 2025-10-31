@@ -1,6 +1,6 @@
 import React from "react";
 import { useDrop } from "react-dnd";
-import "./DropZone.css";
+import "../../assets/css/DropZone.css";
 
 export default function DropZone({ category, onDrop }) {
   const [{ isOver }, drop] = useDrop(() => ({

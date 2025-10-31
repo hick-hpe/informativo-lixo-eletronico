@@ -15,12 +15,9 @@ body {
 }
 
 .titulo-ctn {
-  position: absolute;
-  width: 100%;
-  top: 20px;
   font-weight: bold;
-  font-size: 30x;
   color: #fff;
+  margin-bottom: 40px;
 }
 
 

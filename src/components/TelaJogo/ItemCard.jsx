@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { useDrag } from "react-dnd";
-import "./ItemCard.css";
+import "../../assets/css/ItemCard.css";
 
 export default function ItemCard({ item }) {
   const imgRef = useRef(null);

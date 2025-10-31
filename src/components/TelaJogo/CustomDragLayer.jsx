@@ -1,4 +1,3 @@
-import React from "react";
 import { useDragLayer } from "react-dnd";
 
 export default function CustomDragLayer() {

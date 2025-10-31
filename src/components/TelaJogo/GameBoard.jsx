@@ -5,7 +5,7 @@ import ItemCard from "./ItemCard";
 import DropZone from "./DropZone";
 import CustomDragLayer from "./CustomDragLayer";
 import { items } from "../../data/items";
-import "./GameBoard.css";
+import "../../assets/css/GameBoard.css";
 
 const categories = [
   { type: "eletronico", name: "Lixo Eletrônico" },
@@ -46,6 +46,10 @@ export default function GameBoard() {
     <DndProvider backend={HTML5Backend}>
       <div className="game-board">
         {/* Título informativo */}
+        <div className="titulo-ctn">
+          <h1 style={{ fontSize: '60px' }}>♻️ Jogo do Lixo Eletrônico</h1>
+        </div>
+        
         <h2>Aprenda a separar corretamente os resíduos!</h2>
 
         <div className="items-container">
